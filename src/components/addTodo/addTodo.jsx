@@ -6,7 +6,7 @@ import { addTodoAction } from '../../actions/addTodoAction';
 class AddTodo extends Component {
     addTodo(event) {
         if (event.key === 'Enter') {
-            this.props.addTodo({ workName: event.target.value });
+            this.props.addTodo(event.target.value);
             event.target.value = null;
         }
     }
